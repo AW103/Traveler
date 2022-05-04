@@ -5,7 +5,7 @@ import GetCountry from "./components/GetCountry"
 
 const App = () => {
     return (
-        <div className="d-flex h-100 w-100">
+        <div className="d-flex h-100 w-100 mx-auto flex-column">
             <header>Traveler</header>
             <GetCountry />
             {/* <Routes>
