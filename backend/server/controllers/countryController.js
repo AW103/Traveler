@@ -31,6 +31,7 @@ getCountry: async (req,res) => {
 getCity: async (req,res) => {
  const country = req.query.country
  let citiesArr = [];
+ console.log(`country is ${country}`);
   await axios(cityConfig).then((response) => {
     let allCountryInfo = response.data.data
     let countriesArr = allCountryInfo.filter((obj) => {

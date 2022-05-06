@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import "./tripCard.css";
-import { Link } from "react-router-dom";
-import Container from "react-bootstrap/esm/Container";
-import Button from "react-bootstrap/esm/Button";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row"
+import GetCity from "./GetCity";
+import GetCountry from "./GetCountry";
 
-const TripCard = ({ country, city, message }) => {
-    console.log(country,city);
-    if(country === []) {
-      return null;
-    }
-console.log(`message is ${message}`);
+const TripCard = () => {
+
+// console.log(`country is ${country}`);
   return (
-      <section className="text-center mb-auto jumbotron">
-        <h1>{country}</h1>
-        <h2>{message}</h2>
-        <h2>{city}</h2>
-        <div>
-
-    </div>
+    <section className="tripCard">
+    <Card className="mt-5 mx-auto" style={{ width: "30rem", border: "none"}}>
+      <h1>Adventure awaits!</h1>
+      <h2>First,let's find a country.</h2>
+        <Row>
+          <GetCountry/>
+        </Row>
+    </Card> 
     </section>
   );
 };
