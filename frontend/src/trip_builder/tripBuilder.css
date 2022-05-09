@@ -1,0 +1,18 @@
+.tripBuilder{
+   background-image: url("https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80");
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: 100%;
+   height: auto;
+   color: rgb(58, 50, 50);
+   font-family: "Montserrat", sans-serif;
+}
+h1{
+    color: rgb(232, 229, 229);
+    font-size: 5rem;
+    padding-top: 5rem;
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+

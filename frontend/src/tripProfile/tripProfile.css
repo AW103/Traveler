@@ -1,0 +1,19 @@
+main > #tripProfile{
+    background-color: rgb(208, 208, 208);
+    font-family: "Monsterrat", sans-serif;
+    height: 100%;
+}
+.display > h1 {
+color: rgb(18, 86, 146);
+}
+.display > h2 {
+color: rgb(25, 110, 184);
+}
+.userTrips{
+    font-size: 80px;
+    padding: 1rem;
+}
+.display{
+margin: 1rem 10rem;
+
+}

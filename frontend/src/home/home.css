@@ -2,38 +2,54 @@
  * Globals
  */
 
-/* Custom default button */
-.btn{
-  border-color: rgb(125, 205, 78);
-  color:rgb(125, 205, 78);
+.homeBtn{
+  border-color: rgb(18, 200, 255);
+  color:rgb(97, 242, 255);
 }
-.btn:hover,
-.btn:focus {
-  background-color:  rgb(125, 205, 78);
-  color:  rgb(43, 60, 29);
+.homeBtn:hover,
+.homeBtn:focus {
+  background-color:  rgb(1, 61, 182);
+  border-color: rgb(0, 7, 108);
+  color:  rgb(210, 254, 255);
   text-shadow: none; /* Prevent inheritance from `body` */
-}
-main{
-  display: flex;
-  flex-direction: column;
-}
-.beginBtn{
-  text-align: center;
-}
-
-.greeting{
-  font-size: 4rem;
-  font-style: italic;
-  margin: 2rem;
 }
 
 .welcome-div {
   width: 50%;
+  padding-top: 4rem;
   padding-bottom: 4rem;
-  margin: 1rem;
+  margin: 3rem 1rem 1rem 1rem;
   text-align: center;
   color: rgb(232, 254, 255);
 }
+.greeting{
+  font-size: 4rem;
+  font-style: italic;
+  margin: 2rem;
+  text-align: center;
+  opacity: 0;
+   animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.beginBtn{
+  text-align: center;
+opacity: 0;
+ animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 
 /*
  * Base structure

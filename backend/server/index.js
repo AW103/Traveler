@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
-const {getCountry, getCity} = require("./controllers/countryController")
+const {getCountry, getCity,addTrip, getTrips, deleteTrip} = require("./controllers/countryController")
 
 const app = express();
 
@@ -14,6 +14,9 @@ app.use(cors());
 
 app.get("/getCountry", getCountry);
 app.get("/getCity", getCity);
+app.get("/getTrips", getTrips);
+app.post("/addTrip", addTrip);
+app.delete("/deleteTrip/:id", deleteTrip);
 
 
 app.use("*", (_req, res) => {
