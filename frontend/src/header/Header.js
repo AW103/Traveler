@@ -7,7 +7,7 @@ import "./header.css";
 const Header = () => {
   return (
     <header>
-      <Navbar collapseOnSelect className="top" expand="lg">
+      <Navbar collapseOnSelect className="top" expand="md">
         <Container className="brandContainer container-fluid">
           <Navbar.Brand className="brandName navbar-brand" href="/">
             Traveler

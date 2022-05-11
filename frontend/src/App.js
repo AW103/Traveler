@@ -15,7 +15,7 @@ const App = () => {
 
 
   return (
-    <main className="appPage d-flex h-100 w-100 mx-auto flex-column">
+    <main className="appPage">
       <Header/>
       <Routes>
         <Route path="/" exact element={<Home />} />

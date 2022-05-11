@@ -2,7 +2,8 @@ require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
-const {getCountry, getCity,addTrip, getTrips, deleteTrip} = require("./controllers/countryController")
+const {getCountry, getCity, getCode} = require("./controllers/locationController")
+const {addTrip, getTrips, deleteTrip} = require("./controllers/tripController")
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(cors());
 
 app.get("/getCountry", getCountry);
 app.get("/getCity", getCity);
+app.get("/getCode", getCode);
 app.get("/getTrips", getTrips);
 app.post("/addTrip", addTrip);
 app.delete("/deleteTrip/:id", deleteTrip);

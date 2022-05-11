@@ -9,8 +9,8 @@ const GetCity = ({ country }) => {
   // console.log(`country is ${country}`);
   let message = `Let's get a city next.`;
 
-  const handleClick = async () => {
-    // console.info("Button was clicked");
+  const handleGetCityClick = async () => {
+    console.info("GetCity Button was clicked");
     const response = await postman.get("/getCity", {
       params: { country: `${country}` },
     });
@@ -25,7 +25,7 @@ const GetCity = ({ country }) => {
     <div className="city">
       <div>
         <h2>{message}</h2>
-        <Button className="cityBtn btn-secondary" onClick={handleClick}>
+        <Button className="cityBtn btn-secondary" onClick={handleGetCityClick}>
           Click for a city
         </Button>
         <h2>{city}</h2>
@@ -42,9 +42,7 @@ const GetCity = ({ country }) => {
             </Button>
           </div>
           <div className="addTrip">
-            <AddTrip country={country} city={addCity}>
-              ADD TRIP
-            </AddTrip>
+            <AddTrip country={country} city={addCity}/>
             </div>
           </div>
         ) : null}

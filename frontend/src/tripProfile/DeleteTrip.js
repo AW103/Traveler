@@ -12,7 +12,7 @@ const DeleteTrip = ({id}) => {
     }
     console.log(updatedTrips);
     return (
-        <div>
+        <div className="remove">
         <Button className="btn-sm" variant="outline-danger" onClick={handleClick}>Remove</Button>
         </div>
     )

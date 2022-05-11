@@ -10,15 +10,14 @@ console.log(`country is ${country}, city is ${city}`);
         country: country,
         city: city
     }
-
-    const handleClick = async () => {
-        // console.info("Button was clicked");
+    const handleAddTripClick = async () => {
+        console.info("Add trip Button was clicked");
     let res = await postman.post("/addTrip",body);
        setResponse(res.data)
       };
 return (
 <section>
-    <Button variant="outline-warning" className="addTripBtn" onClick={handleClick}>Add trip</Button>
+    <Button variant="outline-warning" className="addTripBtn" onClick={handleAddTripClick}>Add trip</Button>
     {response !== null ? <Link to="/tripProfile" className="viewTripsBtn btn btn-outline-success">Click to view trips</Link> : null}
     </section>
 )

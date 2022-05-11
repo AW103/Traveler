@@ -17,8 +17,6 @@ const GetCountry = () => {
     return response.data;
   };
 
-  const renderCity = <GetCity country={city} />;
-
   return (
     <div className="tripInfo">
       <Container className="tripCard">
@@ -33,7 +31,7 @@ const GetCountry = () => {
       </Container>
       {city !== null ? (
         <Container className="tripCard">
-          <section className="citySection">{renderCity}</section>
+          <section className="citySection"><GetCity country={city} /></section>
         </Container>
       ) : null}
   

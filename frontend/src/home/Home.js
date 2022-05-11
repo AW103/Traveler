@@ -10,12 +10,12 @@ const Home = () => {
             </Link>
         </div>
 return (
-    <main className="homePage h-100 w-100 mx-auto">
+    <section className="homePage d-flex h-100 w-100 mx-auto flex-column">
         <div className="welcome-div">
          <h1 className="greeting">The world is yours.</h1>
         {button}
         </div>
-    </main>
+    </section>
 )
 }
 
